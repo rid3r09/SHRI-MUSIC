@@ -43,7 +43,7 @@ async def start_comm(client, message: Message, _):
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
             keyboard = help_pannel(_)
-            await message.reply_sticker("CAACAgQAAx0CYbldbwACA59kpX67I7UEZupJ-S_L1MtG_F8xiAACig4AAjKp4VE_gVvAWSXwwR4E")
+            await message.reply_sticker("CAACAgQAAx0CYbldbwACA59kpaaOFdN4S91mDuvQJ3gksJgGwgACig4AAjKp4VE_gVvAWSXwwR4E")
             return await message.reply_photo(
                        photo=config.START_IMG_URL,
                        caption=_["help_1"], reply_markup=keyboard
@@ -88,7 +88,7 @@ async def start_comm(client, message: Message, _):
                     details = stats.get(vidid)
                     title = (details["title"][:35]).title()
                     if vidid == "telegram":
-                        msg += f"🔗[ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/DOSTO_KI_M3HFIL) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
+                        msg += f"🔗[ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/DevilsHeavenMF) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
                     else:
                         msg += f"🔗 [{title}](https://www.youtube.com/watch?v={vidid}) ** played {count} times**\n\n"
                 msg = _["ustats_2"].format(tot, tota, limit) + msg
@@ -138,7 +138,7 @@ async def start_comm(client, message: Message, _):
                 )
             return
         if name[0:3] == "inf":
-           m = await message.reply_text("🥀𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠 𝐅𝐨𝐫 𝐮𝐡....")
+            m = await message.reply_text("🔎")
             query = (str(name)).replace("info_", "", 1)
             query = f"https://www.youtube.com/watch?v={query}"
             results = VideosSearch(query, limit=1)
@@ -154,24 +154,18 @@ async def start_comm(client, message: Message, _):
                 link = result["link"]
                 published = result["publishedTime"]
             searched_text = f"""
-ㅤㅤ**🔔 ❰ 𝐒ᴏɴɢ🎙𝐈ɴғᴏʀᴍᴀᴛɪᴏɴ ❱ 🔔**
-        
-★•.¸¸♡¸¸.•*¨*•☆•*♫*•.¸¸♡¸¸.•*☆*•.¸¸♡¸¸.•★
-● 🎸 **𝐍𝐚𝐦𝐞 ➪ [{title}]({link})**　　
-★ 　° :. ★　 ♫ • ○ ° ★ ☆ . * ● ¸ .✦ .✮
-● 💽 **𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧 ➪ [{duration} ᴍɪɴ.]({link})**☆¸¸♡¸¸★
-★ 　° :. ★　 ♫ • ○ ° ★ ☆ . * ● ¸ .✦ .❊
-● 🕹 **𝐕𝐢𝐞𝐰𝐬 ➪ [{views}]({link})**.♫.☆ ¸¸♡¸¸ ✭
-•✰˚♫. * ● ¸ .★ .¸¸♡¸¸★ :●. ♫°☆ ¸. ● .. ✫
-● ⏰ **𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝 𝐎𝐧 ➪ [{published}]({link})**. ✰
-° °☆ 　¸. ● . .¸¸♡¸¸.★　★✰˚♫. ○  ✦ .✵
-● 📺 **𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ➪ [{channel}]({link})**★
-•✰˚♫. * ● ¸ . ★ .¸¸♡¸¸★ :●. *°☆ ¸. ● .. ✧
-● 🗯 **𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐋𝐢𝐧𝐤 ➪ [ᴠɪsɪᴛ ᴄʜᴀɴɴᴇʟ]({channellink})**✰
-•✰˚♫. * ● ¸ . ★ .¸¸♡¸¸★ :●. *°☆ ¸. ● .. ★
-● 📡 **𝐋𝐢𝐧𝐤 ➪ [ᴡᴀᴛᴄʜ ᴏɴ ʏᴏᴜᴛᴜʙᴇ]({link})**☆.♡
-•✰˚♫. * ● ¸ . ★ .¸¸♡¸¸★ :●. *°☆ ¸. ● .. ✷"""""
+😲**ᴛʀᴀᴄᴋ ɪɴғᴏʀɴᴀᴛɪᴏɴ**😲
 
+📌 **ᴛɪᴛʟᴇ:** {title}
+
+⏳ **ᴅᴜʀᴀᴛɪᴏɴ:** {duration} ᴍɪɴᴜᴛᴇs
+👀 **ᴠɪᴇᴡs:** `{views}`
+⏰ **ᴩᴜʙʟɪsʜᴇᴅ ᴏɴ:** {published}
+🎥 **ᴄʜᴀɴɴᴇʟ:** {channel}
+📎 **ᴄʜᴀɴɴᴇʟ ʟɪɴᴋ:** [ᴠɪsɪᴛ ᴄʜᴀɴɴᴇʟ]({channellink})
+🔗 **ʟɪɴᴋ:** [ᴡᴀᴛᴄʜ ᴏɴ ʏᴏᴜᴛᴜʙᴇ]({link})
+
+💖 sᴇᴀʀᴄʜ ᴩᴏᴡᴇʀᴇᴅ ʙʏ {config.MUSIC_BOT_NAME}"""
             key = InlineKeyboardMarkup(
                 [
                     [
@@ -179,7 +173,7 @@ async def start_comm(client, message: Message, _):
                             text="• ʏᴏᴜᴛᴜʙᴇ •", url=f"{link}"
                         ),
                         InlineKeyboardButton(
-                            text="• sᴜᴩᴩᴏʀᴛ •", url="https://t.me/INCRICIBLE"
+                            text="• sᴜᴩᴩᴏʀᴛ •", url="https://t.me/DOSTO_KI_M3HFIL"
                         ),
                     ],
                 ]
@@ -208,7 +202,7 @@ async def start_comm(client, message: Message, _):
         out = private_panel(_, app.username, OWNER)
         if config.START_IMG_URL:
             try:
-                await message.reply_sticker("CAACAgQAAx0CYbldbwACA59kpX67I7UEZupJ-S_L1MtG_F8xiAACig4AAjKp4VE_gVvAWSXwwR4E")
+                await message.reply_sticker("CAACAgQAAx0CYbldbwACA59kpaaOFdN4S91mDuvQJ3gksJgGwgACig4AAjKp4VE_gVvAWSXwwR4E")
                 await message.reply_photo(
                     photo=config.START_IMG_URL,
                     caption=_["start_2"].format(
