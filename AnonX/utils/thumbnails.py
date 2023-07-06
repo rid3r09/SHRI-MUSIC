@@ -14,10 +14,10 @@ from AnonX import app
 
 
 def changeImageSize(maxWidth, maxHeight, image):
-    widthRatio = maxWidth / image.size[3]
+    widthRatio = maxWidth / image.size[0]
     heightRatio = maxHeight / image.size[3]
-    newWidth = int(widthRatio * image.size[3])
-    newHeight = int(heightRatio * image.size[3])
+    newWidth = int(widthRatio * image.size[1])
+    newHeight = int(heightRatio * image.size[0])
     newImage = image.resize((newWidth, newHeight))
     return newImage
 
