@@ -80,24 +80,24 @@ START_IMG_URL = getenv("START_IMG_URL", "https://graph.org/file/600f9b7306b5f980
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://graph.org/file/2c38a8b0e204163ac2cb3.jpg",
+    "https://graph.org/file/6f61b27a76d43b2f052ba.jpg",
 )
 
-PLAYLIST_IMG_URL = "https://te.legra.ph/file/4ec5ae4381dffb039b4ef.jpg"
+PLAYLIST_IMG_URL = "https://graph.org/file/dd3cffd7655e62bf68584.jpg"
 
 GLOBAL_IMG_URL = "https://te.legra.ph/file/e906c2def5afe8a9b9120.jpg"
 
 STATS_IMG_URL = "https://te.legra.ph/file/e906c2def5afe8a9b9120.jpg"
 
-TELEGRAM_AUDIO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
+TELEGRAM_AUDIO_URL = "https://graph.org/file/4e879fcffcb9e1a5b0b57.jpg"
 
-TELEGRAM_VIDEO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
+TELEGRAM_VIDEO_URL = "https://graph.org/file/4e879fcffcb9e1a5b0b57.jpg"
 
 STREAM_IMG_URL = "https://te.legra.ph/file/bd995b032b6bd263e2cc9.jpg"
 
 SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/bb0ff85f2dd44070ea519.jpg"
 
-YOUTUBE_IMG_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
+YOUTUBE_IMG_URL = "https://graph.org/file/dd3cffd7655e62bf68584.jpg"
 
 SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/37d163a2f75e0d3b403d6.jpg"
 
