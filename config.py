@@ -16,17 +16,17 @@ MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "𝐒ʜʀɪ 𝐌ᴜsɪ𝐂")
 
-OWNER_ID = list(map(int, getenv("OWNER_ID", "5607905870").split()))
+OWNER_ID = list(map(int, getenv("OWNER_ID", "5672807383").split()))
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/rid3r09/SHRI-MUSIC")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/TOXIC-BOY-OP/SHRI-MUSIC")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/SHRI_SUPPORT")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/DOSTO_KI_M3HFIL")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/THEYSTOPPAGE1")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/THEYSTOPPAGE")
 
 SUPPORT_HEHE = SUPPORT_GROUP.split("me/")[1]
 
@@ -76,11 +76,11 @@ clean = {}
 autoclean = []
 
 
-START_IMG_URL = getenv("START_IMG_URL", "https://graph.org/file/600f9b7306b5f980548ca.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://graph.org/file/b155f5374601e1b8b5b86.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://graph.org/file/6f61b27a76d43b2f052ba.jpg",
+    "https://graph.org/file/a68f307970156658a630e.jpg",
 )
 
 PLAYLIST_IMG_URL = "https://graph.org/file/dd3cffd7655e62bf68584.jpg"
@@ -130,9 +130,9 @@ if UPSTREAM_REPO:
 if PING_IMG_URL:
     if PING_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
-            PING_IMG_URL = "https://graph.org/file/6f61b27a76d43b2f052ba.jpg"
+            PING_IMG_URL = "https://graph.org/file/a68f307970156658a630e.jpg"
 
 if START_IMG_URL:
     if START_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", START_IMG_URL):
-            START_IMG_URL = "https://graph.org/file/744512a212a5ab221c613.jpg"
+            START_IMG_URL = "https://graph.org/file/b155f5374601e1b8b5b86.jpg"
